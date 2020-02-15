@@ -22,7 +22,7 @@ ENV LANG=C.UTF-8
     
 # Print out installed version
 # RUN echo "VERSION=$VERSION"
-arm-none-eabi-gcc --version
+RUN arm-none-eabi-gcc --version
 
 # Clean up cache
 RUN rm -rf /var/cache/apk/*

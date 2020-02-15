@@ -21,7 +21,8 @@ ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
     
 # Print out installed version
-RUN echo "VERSION=$VERSION"
+# RUN echo "VERSION=$VERSION"
+arm-none-eabi-gcc --version
 
 # Clean up cache
 RUN rm -rf /var/cache/apk/*

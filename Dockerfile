@@ -4,7 +4,7 @@ MAINTAINER https://github.com/yangchengwork/docker-arm-none-eabi
 RUN sed -ri 's/^# deb /deb /g' /etc/apt/sources.list && \
     apt update; \
     apt install -y curl ca-certificates make \
-    bzip2
+    bzip2 git-core subversion
 
 # Install gcc
 ENV VERSION="9-2019-q4"
